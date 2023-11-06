@@ -1,0 +1,41 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+header > nav {
+    background-color: black;
+    padding: 3px;
+}
+
+li {
+    list-style: circle;
+}
+
+
+/* heading elemnets */
+h1 {
+    color: grey;
+}
+h2 {
+    color: blue;
+}
+img {
+    width: 90%;
+    margin-left: auto!important;
+    margin-right: auto!important;
+}
+input {
+    width: 80%;
+    border-radius: 6px;
+}
+button {
+    background-color: royalblue;
+    color: white;
+    border-radius: 13px;
+    margin-top: 7px;
+    font-size: 14px;
+    padding: 3px;
+}
