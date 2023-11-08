@@ -8,12 +8,23 @@ body {
 header > nav {
     background-color: black;
     padding: 3px;
+    font-size: 19px;
+    margin-bottom: 70px;
+}
+
+ul {
+    display: flex;
 }
 
 li {
     list-style: circle;
+    margin: 7px;
 }
 
+li > a {
+    text-decoration: none;
+    color: white;
+}
 
 /* heading elemnets */
 h1 {
@@ -38,4 +49,48 @@ button {
     margin-top: 7px;
     font-size: 14px;
     padding: 3px;
+}
+.container {
+    width: 84%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* ******************************** */
+/* positioning puts element inside the box */
+.box {
+    border: 2px solid black;
+    width: 300px;
+    height: 200px;
+    background-color: rgb(170, 163, 163);
+    display: static;
+}
+.title {
+    position: relative;
+    top: -147px;
+    left: 80px;
+    font-size: 2rem;
+}
+/* ****************************** */
+/* css grid */
+.grid-container {  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 7px 7px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". .";
+}
+/* *********************************** */
+/* css media query */
+@media(max-width: 768px){
+    .grid-container {  
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 7px 7px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          ".";
+      }
 }
